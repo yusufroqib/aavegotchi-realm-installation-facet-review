@@ -92,8 +92,6 @@ function balanceOfToken(
 ```
 
 - **Purpose**: Fetches the balance of an installation (`_id`) for a parent ERC721 token (`_tokenContract`, `_tokenId`).
-- **Security Consideration**: Confirm that the `_tokenContract` is trusted and compliant with ERC721 to prevent interaction with malicious contracts.
-
 
 
 #### `installationBalancesOfToken`
@@ -240,9 +238,6 @@ function claimInstallations(uint256[] calldata _queueIds) external {
   2. Mints installation NFT to claimer
   3. Marks queue item as claimed
   4. Emits QueueClaimed event
-- **Security Consideration**: **Access Control** – Ensure only the rightful owner can claim a queued installation, preventing unauthorized claims.
-- **Analysis**: Ensures installations are only claimable once ready, enforcing game mechanics that add value to in-game assets.
-
 
 
 
