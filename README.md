@@ -1,5 +1,4 @@
-
-## InstallationFacet.sol Technical Review
+## [`InstallationFacet.sol`](https://github.com/aavegotchi/aavegotchi-realm-diamond/blob/master/contracts/InstallationDiamond/facets/InstallationFacet.sol) Technical Review
 
 ### Overview
 The `InstallationFacet` contract is part of the Aavegotchi Realm ecosystem, specifically designed to manage installations, which are in-game assets (such as buildings, decorations, and equipment) that users can craft, equip, and upgrade on their parcels (virtual land in the game). This contract facilitates querying balances, managing crafting queues, and equipping/unequipping installations on parcels. It interacts with other facets and libraries, such as `LibERC1155`, `LibItems`, and `LibInstallation`, to handle ERC1155 tokens and crafting logic.
